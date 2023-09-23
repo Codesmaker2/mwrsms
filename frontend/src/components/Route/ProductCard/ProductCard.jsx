@@ -68,7 +68,7 @@ const { seller } = useSelector((state) => state.seller);
     <>
       <div className="w-full h-[360px] max-400px:h-[175px]  bg-white rounded-lg shadow-xl p-2 relative cursor-pointer">
     <div className="flex">
-        <Link to={`/shop/preview/${data?.seller._id}`}>
+        <Link to={`/shop/preview/${seller?._id}`}>
       <img
               src={`${seller?.avatar?.url}`}
               alt=""
