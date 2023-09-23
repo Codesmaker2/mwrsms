@@ -68,14 +68,14 @@ const { seller } = useSelector((state) => state.seller);
     <>
       <div className="w-full h-[360px] max-400px:h-[175px]  bg-white rounded-lg shadow-xl p-2 relative cursor-pointer">
     <div className="flex">
-        <Link to={`/shop/preview/${data?.shop._id}`}>
+        <Link to={`/shop/preview/${data?.seller._id}`}>
       <img
-              src={`${data?.seller?.avatar?.url}`}
+              src={`${seller?.avatar?.url}`}
               alt=""
               className=" flex w-[35px] h-[35px] max-400px:w-[20px] max-400px:h-[20px] rounded-full cursor-pointer mr-1"
             />
         </Link> 
-        <HiLocationMarker size={12} color="red"/><h5 className={`${styles.shop_name} text-[15px] max-400px:text-[8px] pt-0`}>{data?.seller?.address}</h5>
+        <HiLocationMarker size={12} color="red"/><h5 className={`${styles.shop_name} text-[15px] max-400px:text-[8px] pt-0`}>{seller?.address}</h5>
         </div> 
           
         <div className="flex justify-end"></div>
