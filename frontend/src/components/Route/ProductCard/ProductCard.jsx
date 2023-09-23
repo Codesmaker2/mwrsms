@@ -70,12 +70,12 @@ const ProductCard = ({ data,isEvent }) => {
     <div className="flex">
         <Link to={`/shop/preview/${data?.shop._id}`}>
       <img
-              src={`${seller?.avatar?.url}`}
+              src={`${data?.shop.avatar?.url}`}
               alt=""
               className=" flex w-[35px] h-[35px] max-400px:w-[20px] max-400px:h-[20px] rounded-full cursor-pointer mr-1"
             />
         </Link> 
-        <HiLocationMarker size={12} color="red"/><h5 className={`${styles.shop_name} text-[15px] max-400px:text-[8px] pt-0`}>{seller?.address}</h5>
+        <HiLocationMarker size={12} color="red"/><h5 className={`${styles.shop_name} text-[15px] max-400px:text-[8px] pt-0`}>{data.shop.address}</h5>
         </div> 
           
         <div className="flex justify-end"></div>
